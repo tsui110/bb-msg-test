@@ -41,18 +41,17 @@ if rid == "" or wx_api_url == "" or ghid == "" or qjltoken == "" or moren == "" 
     logger.info("检测到未配置默认值，程序将退出。")
     sys.exit()
 # 开始处理C盘bigbear目录下的表格文件
-allfiles = os.listdir(path=r'C:\bigbear')
-
-for i in allfiles:
-    if 'xls' in i or 'xlsx' in i:
-        print(i)
-        if os.path.isdir(r'C:\backupxls'):
-            shutil.move(r'C:\bigbear' + "\\" + i, r'C:\backupxls' + "\\" + i)
-            logger.info("当前文件名：" + i + "已被移动到C:\\backupxls目录下")
-        else:
-            os.makedirs(r'C:\backupxls')
-            shutil.move(r'C:\bigbear' + "\\" + i, r'C:\backupxls' + "\\" + i)
-            logger.info("当前文件名：" + i + "已被移动到C:\\backupxls目录下")
+#allfiles = os.listdir(path=r'C:\bigbear')
+#for i in allfiles:
+#    if 'xls' in i or 'xlsx' in i:
+#        print(i)
+#        if os.path.isdir(r'C:\backupxls'):
+#            shutil.move(r'C:\bigbear' + "\\" + i, r'C:\backupxls' + "\\" + i)
+#            logger.info("当前文件名：" + i + "已被移动到C:\\backupxls目录下")
+#        else:
+#            os.makedirs(r'C:\backupxls')
+#            shutil.move(r'C:\bigbear' + "\\" + i, r'C:\backupxls' + "\\" + i)
+#            logger.info("当前文件名：" + i + "已被移动到C:\\backupxls目录下")
 
 # 获取adminlist
 sql = "select * from adminforwx"
