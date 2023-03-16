@@ -13,8 +13,8 @@ import os
 import requests
 import  time
 import json
-import pythoncom
-from win32com.client import DispatchEx
+# import pythoncom
+# from win32com.client import DispatchEx
 
 rows4=0
 columns4=0
