@@ -10,3 +10,4 @@ pandas~=1.4.4
 openpyxl~=3.0.10
 aiomysql~=0.1.1
 selenium~=4.4.3
+flask_cors~=3.0.10
