@@ -1,0 +1,12 @@
+jionlp~=1.4.18
+psutil~=5.9.2
+requests~=2.28.1
+Flask~=2.2.2
+numpy~=1.23.3
+jiojio~=1.2.2
+APScheduler~=3.9.1
+cpca~=0.5.5
+pandas~=1.4.4
+openpyxl~=3.0.10
+aiomysql~=0.1.1
+selenium~=4.4.3
