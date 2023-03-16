@@ -19,23 +19,23 @@ wx_api_token = ""
 rid = ''
 itemlist = set()
 for i in result:
-    if i['keys'] == 'moren':
-        moren = i['values']
+    if i['skeys'] == 'moren':
+        moren = i['svalues']
         # print("当前默认消息接收人为：{}".format(moren,))
-    if i['keys'] == 'rid':
-        rid = i['values']
+    if i['skeys'] == 'rid':
+        rid = i['svalues']
         # print("当前默认助手ID：{}".format(rid,))
-    if i['keys'] == 'ghid':
-        ghid = i['values']
+    if i['skeys'] == 'ghid':
+        ghid = i['svalues']
         # print("当前群接龙ID为：{}".format(ghid,))
-    if i['keys'] == 'qjltoken':
-        qjltoken = i['values']
+    if i['skeys'] == 'qjltoken':
+        qjltoken = i['svalues']
         # print("当前群接龙token为：{}".format(qjltoken,))
-    if i['keys'] == 'url':
-        wx_api_url = i['values']
+    if i['skeys'] == 'url':
+        wx_api_url = i['svalues']
         # print("当前调用网址为：{}".format(url,))
-    if i['keys'] == 'apitoken':
-        wx_api_token = i['values']
+    if i['skeys'] == 'apitoken':
+        wx_api_token = i['svalues']
         # print("当前调用token：{}".format(stoken,))
 if rid == "" or wx_api_url == "" or ghid == "" or qjltoken == "" or moren == "" or wx_api_token == "":
     logger.info("检测到未配置默认值，程序将退出。")
