@@ -17,7 +17,7 @@ import time
 from pathlib import Path
 from flask import Flask
 from flask import request, jsonify
-import pythoncom
+#import pythoncom
 from win32com.client import DispatchEx
 
 headers = {
