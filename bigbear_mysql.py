@@ -13,8 +13,8 @@ def dosql(sql):
 
 # 定义一个数据库实例
 async def connect_mysql(sql=None):
-    conn = await aiomysql.connect(host='127.0.0.1', port=3306,
-                                  user='bigbear', password='bigbearpc', db='bigbearpc',
+    conn = await aiomysql.connect(host='containers-us-west-119.railway.app', port=7111,
+                                  user='root', password='itnfc4FaQFLcpYkdSzFF', db='railway',
                                   cursorclass=aiomysql.cursors.DictCursor,
                                   loop=loops)
     if sql is None:
